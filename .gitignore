@@ -1,0 +1,86 @@
+# 编译产物
+*.o
+*.obj
+*.out
+*.exe
+*.app
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# C/C++ 构建目录
+build/
+cmake-build-*/
+out/
+debug/
+release/
+
+# Makefile 生成的文件
+Makefile.in
+Makefile
+autom4te.cache/
+config.log
+config.status
+configure
+config.h
+config.h.in~
+stamp-h1
+libtool
+*.lo
+*.la
+.libs/
+.deps/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.cproject
+.settings/
+*.code-workspace
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 包管理器
+node_modules/
+vendor/
+
+# 调试和测试
+*.core
+core
+vgcore.*
+*.gcov
+*.gcda
+*.gcno
+coverage/
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.orig
+*.patch
+
+# 文档生成
+doxygen/
+docs/html/
+docs/latex/
+
+# 依赖
+*.d
