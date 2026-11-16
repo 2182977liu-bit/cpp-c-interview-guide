@@ -349,6 +349,10 @@ g++ -std=c++17 -Wall -o stl_demo stl_demo.cpp
 
 ---
 
+## 相关材料
+
+- 面场答题脚本（题库手册 06 STL 模块）：[handbook/06-stl](../../../handbook/06-stl/README.md)
+
 ## 参考资料
 
 本文选题参考了公开的 C++ 高频面试题目录（含[卡码笔记 C++ 面试题清单](https://notes.kamacoder.com/cpp/)）作为知识点覆盖范围的对照，**正文、示例与结论均为原创**，依据的是 C++ 标准（`[container.requirements]`、`[unord.req]`）、libstdc++/MSVC 实现文档与公开发表的工程实践。

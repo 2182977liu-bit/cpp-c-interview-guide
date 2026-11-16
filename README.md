@@ -80,6 +80,23 @@
 
 > ✅ = 已完成 | 🚧 = 编写中 | ⏳ = 计划中
 
+## 配套题库：面试题全解手册（7 模块 · 55 题）
+
+教程负责把原理讲透，手册负责在面试桌上怎么说。两套内容互为补充：
+
+| 模块 | 题量 | 覆盖要点 | 入口 |
+|---|---|---|---|
+| 01 基础与语法 | 13 | 三大特性、指针/引用、struct/class/union、static/const、extern C、volatile、inline 与宏、auto/decltype、sizeof/strlen、浮点比较、变量作用域、四种 cast | [阅读](handbook/01-basics/README.md) |
+| 02 面向对象 | 11 | 构造函数、虚析构、重载/重写、多态、虚函数与纯虚函数、虚表、多重继承与菱形继承、final、深浅拷贝、this、单例 | [阅读](handbook/02-oop/README.md) |
+| 03 内存管理 | 7 | 堆与栈、new/malloc、free/delete、placement new、泄漏/野指针/越界、碎片与溢出 | [阅读](handbook/03-memory/README.md) |
+| 04 智能指针 | 3 | 三种指针选型、控制块与引用计数、线程安全性 | [阅读](handbook/04-smart-pointer/README.md) |
+| 05 C++11 与现代 C++ | 11 | 新特性全景、多线程库、左右值引用、移动语义、完美转发、move/forward、Lambda、仿函数性能、RAII、异常、协程 | [阅读](handbook/05-modern-cpp/README.md) |
+| 06 STL 与容器 | 8 | 容器分类选型、allocator、迭代器失效、map/unordered_map、底层实现、rehash、vector 扩容、emplace_back | [阅读](handbook/06-stl/README.md) |
+| 07 并发与 I/O | 2 | 互斥锁与自旋锁、select/poll/epoll | [阅读](handbook/07-concurrency-io/README.md) |
+
+每题统一四段结构：**场景还原 → 三句话版本 → 展开讲 → 高频追问**。手册是"答题脚本"，凡是与教程正文重合的知识点（比如 STL 与 [第 3 章 3.1](docs/03-cpp-advanced/stl/README.md)），以教程的展开与推导为准。
+
+
 ## 每个知识点包含什么
 
 - **通俗讲解**：用大白话解释概念，配合内存图/流程图
