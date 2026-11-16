@@ -63,7 +63,7 @@
 
 | 章节 | 标题 | 核心内容 | 状态 |
 |------|------|----------|------|
-| 3.1 | [STL容器与算法](docs/03-cpp-advanced/stl/README.md) | vector/map/set底层实现、时间复杂度 | 🚧 |
+| 3.1 | [STL容器与算法](docs/03-cpp-advanced/stl/README.md) | vector 扩容与均摊复杂度、deque 分段结构、map/unordered_map 底层、allocator、迭代器失效、emplace_back | ✅ |
 | 3.2 | [模板编程](docs/03-cpp-advanced/template/README.md) | 函数模板、类模板、模板特化、SFINAE | 🚧 |
 | 3.3 | [右值引用与移动语义](docs/03-cpp-advanced/move-semantics/README.md) | 左值右值、std::move、完美转发 | 🚧 |
 | 3.4 | [Lambda与函数对象](docs/03-cpp-advanced/lambda/README.md) | lambda语法、捕获列表、std::function | 🚧 |
