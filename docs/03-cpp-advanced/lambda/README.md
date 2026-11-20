@@ -74,6 +74,7 @@ Lambda 的价值是：不必为了一个很短的回调，专门跑到类外面�
 // lambda_basic.cpp
 // 编译：g++ -std=c++17 -Wall lambda_basic.cpp -o lambda_basic
 #include <algorithm>
+#include <cstdlib>
 #include <iostream>
 #include <vector>
 
