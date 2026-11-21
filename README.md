@@ -73,7 +73,7 @@ C语言基础 → C++面向对象 → C++进阶 ─┐
 | 3.2 | [模板编程](docs/03-cpp-advanced/template/README.md) | 函数/类/变参模板、全特化与偏特化、SFINAE 与 enable_if、if constexpr、C++20 Concepts、两阶段查找、代码膨胀 | ✅ |
 | 3.3 | [右值引用与移动语义](docs/03-cpp-advanced/move-semantics/README.md) | 左值/纯右值/将亡值、移动构造与移动赋值、std::move、万能引用与 std::forward、RVO/NRVO、noexcept | ✅ |
 | 3.4 | [Lambda 与函数对象](docs/03-cpp-advanced/lambda/README.md) | 捕获列表、mutable、初始化捕获、this 生命周期、泛型 Lambda、std::function 类型擦除与开销 | ✅ |
-| 3.5 | 多线程编程 | std::thread、mutex、条件变量、原子操作、内存序 | 🚧 |
+| 3.5 | [多线程编程](docs/03-cpp-advanced/multithreading/README.md) | std::thread、数据竞争、mutex 与 RAII 锁、死锁、条件变量、std::atomic、内存序与性能实践 | ✅ |
 
 ### 第四部分：Linux 开发（新增）
 
