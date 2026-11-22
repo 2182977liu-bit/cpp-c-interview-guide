@@ -80,7 +80,7 @@ fd 不是只能代表普通文件，还可以代表管道、socket、终端、�
 
 ```c
 // copy_file.c
-// 编译：gcc -std=c11 -Wall -Wextra -O2 copy_file.c -o copy_file
+// 编译：gcc -std=gnu11 -Wall -Wextra -O2 copy_file.c -o copy_file
 // 运行：./copy_file source.txt backup.txt
 #include <errno.h>
 #include <fcntl.h>
@@ -275,7 +275,7 @@ if (close(fd) == -1) {
 
 ```c
 // mmap_read.c
-// 编译：gcc -std=c11 -Wall -Wextra -O2 mmap_read.c -o mmap_read
+// 编译：gcc -std=gnu11 -Wall -Wextra -O2 mmap_read.c -o mmap_read
 // 运行：./mmap_read source.txt
 #include <fcntl.h>
 #include <stdio.h>
@@ -381,7 +381,7 @@ int main(int argc, char *argv[]) {
 
 ```c
 // sendfile_copy.c —— Linux 专用示例
-// 编译：gcc -std=c11 -Wall -Wextra -O2 sendfile_copy.c -o sendfile_copy
+// 编译：gcc -std=gnu11 -Wall -Wextra -O2 sendfile_copy.c -o sendfile_copy
 // 运行：./sendfile_copy source.txt target.txt
 #include <errno.h>
 #include <fcntl.h>
