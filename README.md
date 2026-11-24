@@ -82,7 +82,7 @@ C语言基础 → C++面向对象 → C++进阶 ─┐
 | 4.1 | [Linux 基础与排障命令](docs/04-linux/01-basics/README.md) | inode、权限位、软硬链接、进程与信号、CPU/内存/磁盘/网络排查、管道重定向 | ✅ |
 | 4.2 | [文件 IO 与系统调用](docs/04-linux/02-file-io/README.md) | open/read/write、缓冲区、fsync、mmap、零拷贝 | ✅ |
 | 4.3 | [进程与线程（Linux 视角）](docs/04-linux/03-process-thread/README.md) | fork/exec/wait、僵尸与孤儿、线程模型、CPU 亲和性 | ✅ |
-| 4.4 | 进程间通信 | 管道、消息队列、共享内存、信号量、Unix Socket | 🚧 |
+| 4.4 | [进程间通信](docs/04-linux/04-ipc/README.md) | 管道、消息队列、共享内存、信号量、Unix Socket | ✅ |
 | 4.5 | Shell 与自动化 | 常用脚本、cron、systemd/openrc、日志切割 | 🚧 |
 
 ### 第五部分：操作系统
