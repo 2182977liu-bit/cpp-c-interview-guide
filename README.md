@@ -19,7 +19,7 @@
 
 - 📖 系统掌握 C/C++ 面试高频知识点
 - 💻 每个知识点都有可编译运行的示例代码
-- 🎯 知道面试官在考什么、怎么答才能拿高分
+- 🎯 知道面试官在考什么、怎么回答才能拿高分
 - 🧠 理解底层原理，不只是死记硬背
 - ⚡ STL、模板、智能指针等现代C++核心知识
 - 🐧 Linux 常用命令、系统编程与线上排障
@@ -83,7 +83,7 @@ C语言基础 → C++面向对象 → C++进阶 ─┐
 | 4.2 | [文件 IO 与系统调用](docs/04-linux/02-file-io/README.md) | open/read/write、缓冲区、fsync、mmap、零拷贝 | ✅ |
 | 4.3 | [进程与线程（Linux 视角）](docs/04-linux/03-process-thread/README.md) | fork/exec/wait、僵尸与孤儿、线程模型、CPU 亲和性 | ✅ |
 | 4.4 | [进程间通信](docs/04-linux/04-ipc/README.md) | 管道、消息队列、共享内存、信号量、Unix Socket | ✅ |
-| 4.5 | Shell 与自动化 | 常用脚本、cron、systemd/openrc、日志切割 | 🚧 |
+| 4.5 | [Shell 与自动化](docs/04-linux/05-shell/README.md) | 常用脚本、cron、systemd/openrc、日志切割 | ✅ |
 
 ### 第五部分：操作系统
 
@@ -137,11 +137,11 @@ C语言基础 → C++面向对象 → C++进阶 ─┐
 | 模块 | 题量 | 覆盖要点 | 入口 |
 |---|---|---|---|
 | 01 基础与语法 | 13 | 三大特性、指针/引用、struct/class/union、static/const、extern C、volatile、inline 与宏、auto/decltype、sizeof/strlen、浮点比较、变量作用域、四种 cast | [阅读](handbook/01-basics/README.md) |
-| 02 面向对象 | 11 | 构造函数、虚析构、重载/重写、多态、虚函数与纯虚函数、虚表、多重继承与菱形继承、final、深浅拷贝、this、单例 | [阅读](handbook/02-oop/README.md) |
+| 02 面向对象 | 11 | 构造函数、虚析构、重载/重写、多态、虚函数与纯虚函数、final、深浅拷贝、this、单例 | [阅读](handbook/02-oop/README.md) |
 | 03 内存管理 | 7 | 堆与栈、new/malloc、free/delete、placement new、泄漏/野指针/越界、碎片与溢出 | [阅读](handbook/03-memory/README.md) |
 | 04 智能指针 | 3 | 三种指针选型、控制块与引用计数、线程安全性 | [阅读](handbook/04-smart-pointer/README.md) |
 | 05 C++11 与现代 C++ | 11 | 新特性全景、多线程库、左右值引用、移动语义、完美转发、move/forward、Lambda、仿函数性能、RAII、异常、协程 | [阅读](handbook/05-modern-cpp/README.md) |
-| 06 STL 与容器 | 8 | 容器分类选型、allocator、迭代器失效、map/unordered_map、底层实现、rehash、vector 扩容、emplace_back | [阅读](handbook/06-stl/README.md) |
+| 06 STL 与容器 | 8 | 容器分类选型、allocator、迭代器失效、map/unordered_map 底层、rehash、vector 扩容、emplace_back | [阅读](handbook/06-stl/README.md) |
 | 07 并发与 I/O | 2 | 互斥锁与自旋锁、select/poll/epoll | [阅读](handbook/07-concurrency-io/README.md) |
 
 每题统一四段结构：**场景还原 → 三句话版本 → 展开讲 → 高频追问**。手册是"答题脚本"，凡是与教程正文重合的知识点（比如 STL 与 [第 3 章 3.1](docs/03-cpp-advanced/stl/README.md)），以教程的展开与推导为准。
@@ -149,7 +149,7 @@ C语言基础 → C++面向对象 → C++进阶 ─┐
 ## 每个知识点包含什么
 
 - **通俗讲解**：用大白话解释概念，配合内存图/流程图
-- **示例代码**：可编译运行的 C/C++ 代码，附详细注释
+- **示例代码**：可编译运行的 C/C++ 代码，附详细中文注释
 - **面试真题**：真实面试中如何考这个知识点
 - **标准答案**：面试官想听到的回答
 - **踩坑提醒**：常见的错误和误区
@@ -175,7 +175,7 @@ g++ -std=c++17 -Wall -o demo demo.cpp && ./demo
 ## 推荐学习资源
 
 1. **《C Primer Plus》** — C语言入门经典，讲解非常详细，适合零基础
-2. **《C++ Primer》** — C++入门圣经，内容全面，但比较厚，建议当工具书翻阅
+2. **《C++ Primer》** — C++入门圣经，内容全面，不过比较厚，建议当工具书翻阅
 3. **《Effective C++》** — C++进阶必读，55条具体建议，面试高频考点来源
 4. **《STL源码剖析》** — 侯捷老师经典之作，深入理解STL底层实现
 5. **《深入理解计算机系统》（CSAPP）** — 理解计算机底层原理，面试操作系统类问题的必备
@@ -212,7 +212,7 @@ A：欢迎提 Issue 或者 Pull Request，我会尽快修正。大家一起完�
 
 1. **修正错误**：发现内容有误，直接提 Issue 或 PR
 2. **补充内容**：添加新的知识点、面试题、代码示例
-3. **点单章节**：想要哪个方向的内容，开 Issue 说一声
+3. **点单章节**：想先看哪个方向的内容，开 Issue 说一声
 4. **改进表达**：让讲解更通俗易懂，代码注释更清晰
 
 提交 PR 前，请确保：
